@@ -4,7 +4,7 @@ var glob = require("glob");
 var fs = require('fs');
 var ini = require('ini');
 var path = require('path');
-require('String.prototype.endsWith');
+require('String.prototype.endswith');
 
 module.exports = function (user, repository, callback) {
   var homeDirectory = osenv.home();
@@ -20,7 +20,7 @@ module.exports = function (user, repository, callback) {
   glob(homeDirectory + "/**/" + hiddenFolder + "/config", function(er, files) {
     for (var i = 0; i < files.length; i++) {
       var config = ini.parse(fs.readFileSync(files[i], 'utf-8'));
-      if (config && config['remote "origin"'] && config['remote "origin"'].url && config['remote "origin"'].url.endsWith(user + "/" + repository + ".git")) {
+      if (config && config['remote "origin"'] && config['remote "origin"'].url && config['remote "origin"'].url.endswith(user + "/" + repository + ".git")) {
         workingCopies.push(path.join(files[i], "../.."));
       }
     }
