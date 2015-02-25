@@ -1,0 +1,42 @@
+{
+  "name": "git-working-directory",
+  "version": "0.0.1",
+  "description": "Find the working directories of a git repository on a local machine.",
+  "author": {
+    "name": "Adam Richeimer",
+    "email": "adamzr@gmail.com",
+    "url": "adamricheimer.com"
+  },
+  "repository": "adamzr/git-working-directory",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "git-working-directory",
+    "git",
+    "working-directory",
+    "working directory",
+    "working copy",
+    "working-copy"
+  ],
+  "dependencies": {
+    "glob": "^4.4.0",
+    "ini": "^1.3.3",
+    "osenv": "^0.1.0",
+    "string.prototype.endswith": "^0.2.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
