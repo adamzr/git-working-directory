@@ -1,6 +1,6 @@
 {
   "name": "git-working-directory",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Find the working directories of a git repository on a local machine.",
   "author": {
     "name": "Adam Richeimer",
